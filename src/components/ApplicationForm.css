@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #e2eafc);
+    margin: 0;
+    padding: 20px;
+}
+
+.application-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; 
+}
+
+.form-group {
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="address"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.draft-button {
+    background-color: #28a745; 
+    color: white;
+}
+
+.draft-button:hover {
+    background-color: #218838; 
+    transform: translateY(-2px); 
+}
+
+.submit-button {
+    background-color: #007bff; 
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.confirmation-dialog {
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-submit-button,
+.go-back-button {
+    margin-top: 10px;
+    width: 48%;
+}
+
+.go-back-button {
+    background-color: #ffc107; 
+    color: white;
+}
+
+.go-back-button:hover {
+    background-color: #e0a800; 
+    transform: translateY(-2px); 
+}
+
+.confirm-submit-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+/* Success/Error Messages */
+.success-message {
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: #dc3545; 
+    margin: 10px 0;
+}
+
+/* Icons */
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff; 
+}
+
+/* Pseudo-elements for elegant design */
+.application-form::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
